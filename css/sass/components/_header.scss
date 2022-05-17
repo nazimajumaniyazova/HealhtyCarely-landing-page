@@ -1,0 +1,35 @@
+.header {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.header__wrapper {
+    // @include flex($direction: row, $gap: 4rem, $justify-content: space-between, $align-items: center)
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.header__menu {}
+
+.menu {
+    // @include flex($direction: row, $gap: 4rem, $justify-content: space-between, $align-items: center)
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.menu__item {}
+
+.menu__link {
+    @include font($size: 1.4rem, $weight: 500, $height: 20px, $spacing: 0.03em);
+    color: $color-dark;
+    @extend %transition;
+    &:hover {
+        color: $color-primary;
+    }
+}
+
+.header__buttons {
+    margin-left: auto;
+}

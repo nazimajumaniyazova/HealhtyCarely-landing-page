@@ -1,0 +1,42 @@
+.promo {
+    position: relative;
+    overflow: hidden;
+    height: calc(100vh - 125px);
+}
+
+.promo__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.promo__content {
+    max-width: 640px;
+}
+
+.promo__title {
+    margin-bottom: 26px;
+}
+
+.promo__text {
+    margin-bottom: 26px;
+}
+
+.promo__button {}
+
+.promo__img {
+    position: relative;
+    z-index: 2;
+}
+
+.promo__image {}
+
+.promo__circle-elem {
+    position: absolute;
+    left: 650px;
+    top: 108px;
+    width: 1240px;
+    height: 1240px;
+    border-radius: 50%;
+    background-color: $color-primary;
+}

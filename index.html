@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
@@ -30,8 +33,8 @@
                 </ul>
             </nav>
             <div class="header__buttons">
-                <button class="button">Sign In</button>
-                <button class="button button_colored">Sign Up</button>
+                <button class="button button_small">Sign In</button>
+                <button class="button button_colored button_small">Sign Up</button>
             </div>
         </div>
     </header>
@@ -44,42 +47,46 @@
                     <button class="button button_colored">Contact Us</button>
                 </div>
             </div>
-            <img src="./img/promo.png" class="promo__image" alt="The Design Thinking superpowers">
+            <div class="promo__img">
+                <img class="promo__image" src="./img/promo.png" alt="the employee image">
+            </div>
+
         </div>
+        <div class="promo__circle-elem"></div>
     </section>
     <section class="steps">
-        <div class="container steps__wrapper">
+        <div class="container">
             <p class="section-subtitle steps__subtitle">Fast Solutions</p>
             <h2 class="steps__title">step by step to get your solutions</h2>
             <div class="layout-4-column step-container">
-                <div class="step block-shadowed">
+                <div class="step block-shadowed box-line">
                     <div class="step__icon">
-                        <span class="icon-glass"></span>
-                        <h4 class="step__title">Check health complaints</h4>
-                        <p class="step__text">Check the disease so you can easily choose the right specialist</p>
+                        <span class="ico icon-search"></span>
                     </div>
+                    <h4 class="step__title">Check health complaints</h4>
+                    <p class="step__text">Check the disease so you can easily choose the right specialist</p>
                 </div>
-                <div class="step block-shadowed">
+                <div class="step block-shadowed box-line">
                     <div class="step__icon">
-                        <span class="icon-glass"></span>
-                        <h4 class="step__title">Choose doctor Specialist</h4>
-                        <p class="step__text">Choose a specialist according to your disease complaints</p>
+                        <span class="ico icon-profile"></span>
                     </div>
+                    <h4 class="step__title">Choose doctor Specialist</h4>
+                    <p class="step__text">Choose a specialist according to your disease complaints</p>
                 </div>
-                <div class="step block-shadowed">
+                <div class="step block-shadowed box-line">
                     <div class="step__icon">
-                        <span class="icon-glass"></span>
-                        <h4 class="step__title">Make a Schedule</h4>
-                        <p class="step__text">Make a schedule with the doctor concerned so you can start the examination
-                        </p>
+                        <span class="ico icon-calendar"></span>
                     </div>
+                    <h4 class="step__title">Make a Schedule</h4>
+                    <p class="step__text">Make a schedule with the doctor concerned so you can start the examination
+                    </p>
                 </div>
-                <div class="step block-shadowed">
+                <div class="step block-shadowed box-line">
                     <div class="step__icon">
-                        <span class="icon-glass"></span>
-                        <h4 class="step__title">Get your Solutions</h4>
-                        <p class="step__text">After conducting an examination with a specialist we can help find the right healing method</p>
+                        <span class="ico icon-star"></span>
                     </div>
+                    <h4 class="step__title">Get your Solutions</h4>
+                    <p class="step__text">After conducting an examination with a specialist we can help find the right healing method</p>
                 </div>
             </div>
         </div>
