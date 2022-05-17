@@ -1,6 +1,10 @@
 .header {
     padding-top: 40px;
     padding-bottom: 40px;
+    @include media-tablet {
+        padding-top: 20px;
+        padding-bottom: 2px;
+    }
 }
 
 .header__wrapper {
@@ -8,6 +12,12 @@
     display: flex;
     gap: 40px;
     align-items: center;
+}
+
+.header__menu {
+    @include media-tablet {
+        display: none;
+    }
 }
 
 .menu {
@@ -28,4 +38,7 @@
 
 .header__buttons {
     margin-left: auto;
+    @include media-mobile-mini {
+        display: none;
+    }
 }
