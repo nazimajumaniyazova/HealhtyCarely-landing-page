@@ -10,16 +10,12 @@
     align-items: center;
 }
 
-.header__menu {}
-
 .menu {
     // @include flex($direction: row, $gap: 4rem, $justify-content: space-between, $align-items: center)
     display: flex;
     gap: 40px;
     align-items: center;
 }
-
-.menu__item {}
 
 .menu__link {
     @include font($size: 1.4rem, $weight: 500, $height: 20px, $spacing: 0.03em);
