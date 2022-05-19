@@ -1,0 +1,45 @@
+.rating {
+    padding-top: 150px;
+}
+
+.rating__wrapper {}
+
+.rating__subtitle {
+    text-align: center;
+}
+
+.rating__title {
+    text-align: center;
+    max-width: 411px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.rating__boxes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.counter {
+    flex-basis: 287px;
+    padding-top: 50px;
+    padding-bottom: 44px;
+    text-align: center;
+    color: $color-dark;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.counter-num {
+    @include font($size: 3.2rem, $weight: 700, $height: 4rem, $spacing: 0.03em);
+    margin-bottom: 1.2rem;
+}
+
+.counter-title {
+    @include font($size: 1.4rem, $weight: 700, $height: 2.8rem, $spacing: 0.03em);
+}
+
+.counter-desc {
+    @include font($size: 1.2rem, $weight: 400, $height: 1.6rem, $spacing: 0.03em);
+    color: $color-text;
+}

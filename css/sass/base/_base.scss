@@ -46,6 +46,7 @@ h4 {
 .section-subtitle {
     @include font($size: 1.4rem, $height: 20px, $weight: 700, $spacing: 0.03em);
     color: $color-primary;
+    margin-bottom: 10px;
 }
 
 .block-shadowed {
@@ -63,4 +64,31 @@ h4 {
         background-color: $color-primary;
         width: 100%;
     }
+}
+
+.card-profile__img {
+    width: 100%;
+}
+
+.oportinuties {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+}
+
+.oportinuties__text {
+    @include font($size: 14px, $height: 20px, $weight: 600, $spacing: 0.02em);
+    color: $color-dark;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+}
+
+.oportinuties__icon {
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

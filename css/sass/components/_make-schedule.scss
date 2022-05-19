@@ -1,0 +1,59 @@
+.make-schedule {
+    padding-top: 150px;
+}
+
+.make-schedule__wrapper {
+    display: flex;
+    gap: 70px;
+}
+
+.make-schedule__content {
+    max-width: 441px;
+}
+
+.make-schedule__title {
+    margin-bottom: 26px;
+}
+
+.make-schedule__text {
+    margin-bottom: 26px;
+}
+
+.make-schedule__oportinuties {
+    margin-bottom: 26px;
+}
+
+.make-schedule__button {}
+
+.make-schedule__img {
+    width: 611px;
+    height: 375px;
+    background-image: url("./../../../img/image\ 3.png");
+    background-repeat: no-repeat;
+    border-radius: 1000px;
+    background-size: cover;
+    align-self: center;
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        top: -10px;
+        left: 5px;
+        width: 611px;
+        height: 375px;
+        border: 2px solid $color-primary;
+        border-radius: 1000px;
+        z-index: -1;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        right: 5px;
+        width: 611px;
+        height: 375px;
+        border: 2px solid $color-primary;
+        border-radius: 1000px;
+        z-index: -1;
+    }
+}
