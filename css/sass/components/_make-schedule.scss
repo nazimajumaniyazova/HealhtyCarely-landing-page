@@ -5,14 +5,28 @@
 .make-schedule__wrapper {
     display: flex;
     gap: 70px;
+    @include media-tablet {
+        flex-wrap: wrap;
+    }
 }
 
 .make-schedule__content {
     max-width: 441px;
+    @include media-tablet {
+        order: 1;
+        max-width: 80%;
+        text-align: center;
+        margin: 0 auto;
+    }
 }
 
 .make-schedule__title {
     margin-bottom: 26px;
+    @include media-tablet {
+        max-width: 70%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
 }
 
 .make-schedule__text {
@@ -21,24 +35,41 @@
 
 .make-schedule__oportinuties {
     margin-bottom: 26px;
+    @include media-tablet {}
 }
 
 .make-schedule__button {}
 
 .make-schedule__img {
-    width: 611px;
-    height: 375px;
-    background-image: url("./../../../img/image\ 3.png");
-    background-repeat: no-repeat;
-    border-radius: 1000px;
-    background-size: cover;
     align-self: center;
+    @include media-tablet {
+        flex-basis: 100%;
+        order: 2;
+        border: 1px solid green;
+    }
+}
+
+.make-schedule__image {
+    display: block;
+    position: relative;
+    border-radius: 1000px;
+    @include media-tablet {
+        align-self: center;
+        justify-self: center;
+    }
+}
+
+picture {
+    @include media-tablet {
+        align-self: center;
+        justify-self: center;
+    }
     position: relative;
     &::after {
         content: '';
         position: absolute;
-        top: -10px;
-        left: 5px;
+        top: -3%;
+        left: 2%;
         width: 611px;
         height: 375px;
         border: 2px solid $color-primary;
@@ -48,8 +79,8 @@
     &::before {
         content: '';
         position: absolute;
-        bottom: -10px;
-        right: 5px;
+        bottom: -3%;
+        right: 2%;
         width: 611px;
         height: 375px;
         border: 2px solid $color-primary;
