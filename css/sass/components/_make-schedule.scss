@@ -1,12 +1,15 @@
 .make-schedule {
     padding-top: 150px;
+    @include media-tablet {
+        padding-top: 100px;
+    }
 }
 
 .make-schedule__wrapper {
     display: flex;
     gap: 70px;
     @include media-tablet {
-        flex-wrap: wrap;
+        flex-direction: column;
     }
 }
 
@@ -42,10 +45,12 @@
 
 .make-schedule__img {
     align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     @include media-tablet {
         flex-basis: 100%;
         order: 2;
-        border: 1px solid green;
     }
 }
 
@@ -53,17 +58,16 @@
     display: block;
     position: relative;
     border-radius: 1000px;
-    @include media-tablet {
-        align-self: center;
-        justify-self: center;
+    @include media-mobile {
+        max-width: 526px;
+    }
+    @include media-mobile-small {
+        max-width: 426px;
+        height: auto;
     }
 }
 
 picture {
-    @include media-tablet {
-        align-self: center;
-        justify-self: center;
-    }
     position: relative;
     &::after {
         content: '';
@@ -80,11 +84,43 @@ picture {
         content: '';
         position: absolute;
         bottom: -3%;
-        right: 2%;
+        left: -2%;
         width: 611px;
         height: 375px;
         border: 2px solid $color-primary;
         border-radius: 1000px;
         z-index: -1;
+    }
+    @include media-tablet {
+        align-self: center;
+        justify-self: center;
+    }
+    @include media-mobile {
+        &::after {
+            top: -3%;
+            left: 2%;
+            width: 521px;
+            height: 285px;
+        }
+        &::before {
+            bottom: -3%;
+            left: -2%;
+            width: 521px;
+            height: 285px;
+        }
+    }
+    @include media-mobile-small {
+        &::after {
+            top: -3%;
+            left: 2%;
+            width: 421px;
+            height: 250px;
+        }
+        &::before {
+            bottom: -3%;
+            left: -2%;
+            width: 421px;
+            height: 250px;
+        }
     }
 }

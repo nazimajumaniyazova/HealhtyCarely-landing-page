@@ -1007,6 +1007,15 @@ h4 {
           justify-content: space-between;
 }
 
+@media (max-width: 996px) {
+  .find-doctor__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .find-doctor__content {
   -ms-flex-preferred-size: 42%;
       flex-basis: 42%;
@@ -1029,10 +1038,18 @@ h4 {
   z-index: 2;
 }
 
+@media (max-width: 996px) {
+  .find-doctor__img {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
 .find-doctor__card-profile {
   position: absolute;
-  left: -15%;
-  top: 20%;
+  left: -8%;
+  top: 25%;
   max-width: 144px;
   max-height: 178px;
   border-radius: 10px;
@@ -1040,6 +1057,31 @@ h4 {
           box-shadow: 0px -24px 34px rgba(199, 201, 217, 0.15);
   border-radius: 10px;
   z-index: 5;
+}
+
+@media (max-width: 996px) {
+  .find-doctor__card-profile {
+    left: 25%;
+    top: 15%;
+  }
+}
+
+@media (max-width: 776px) {
+  .find-doctor__card-profile {
+    left: 15%;
+    top: 15%;
+  }
+}
+
+.find-doctor__image {
+  max-width: 516px;
+}
+
+@media (max-width: 996px) {
+  .find-doctor__image {
+    max-width: 416px;
+    height: auto;
+  }
 }
 
 .find-doctor__circle-elem {
@@ -1053,12 +1095,25 @@ h4 {
   z-index: -1;
 }
 
+@media (max-width: 996px) {
+  .find-doctor__circle-elem {
+    left: 30%;
+    top: 38%;
+  }
+}
+
 .find-doctor__oportinuties {
   margin-bottom: 26px;
 }
 
 .make-schedule {
   padding-top: 150px;
+}
+
+@media (max-width: 996px) {
+  .make-schedule {
+    padding-top: 100px;
+  }
 }
 
 .make-schedule__wrapper {
@@ -1070,8 +1125,10 @@ h4 {
 
 @media (max-width: 996px) {
   .make-schedule__wrapper {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -1112,8 +1169,16 @@ h4 {
 
 .make-schedule__img {
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
       align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media (max-width: 996px) {
@@ -1123,7 +1188,6 @@ h4 {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
-    border: 1px solid green;
   }
 }
 
@@ -1133,28 +1197,21 @@ h4 {
   border-radius: 1000px;
 }
 
-@media (max-width: 996px) {
+@media (max-width: 776px) {
   .make-schedule__image {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    max-width: 526px;
+  }
+}
+
+@media (max-width: 590px) {
+  .make-schedule__image {
+    max-width: 426px;
+    height: auto;
   }
 }
 
 picture {
   position: relative;
-}
-
-@media (max-width: 996px) {
-  picture {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    -ms-grid-column-align: center;
-        justify-self: center;
-  }
 }
 
 picture::after {
@@ -1173,12 +1230,52 @@ picture::before {
   content: '';
   position: absolute;
   bottom: -3%;
-  right: 2%;
+  left: -2%;
   width: 611px;
   height: 375px;
   border: 2px solid #4D77FF;
   border-radius: 1000px;
   z-index: -1;
+}
+
+@media (max-width: 996px) {
+  picture {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+}
+
+@media (max-width: 776px) {
+  picture::after {
+    top: -3%;
+    left: 2%;
+    width: 521px;
+    height: 285px;
+  }
+  picture::before {
+    bottom: -3%;
+    left: -2%;
+    width: 521px;
+    height: 285px;
+  }
+}
+
+@media (max-width: 590px) {
+  picture::after {
+    top: -3%;
+    left: 2%;
+    width: 421px;
+    height: 250px;
+  }
+  picture::before {
+    bottom: -3%;
+    left: -2%;
+    width: 421px;
+    height: 250px;
+  }
 }
 
 .rating {
@@ -1204,6 +1301,13 @@ picture::before {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 30px;
+}
+
+@media (max-width: 590px) {
+  .rating__boxes {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .counter {

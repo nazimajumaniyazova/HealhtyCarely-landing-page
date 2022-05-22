@@ -19,6 +19,9 @@
     display: flex;
     justify-content: center;
     gap: 30px;
+    @include media-mobile-small {
+        flex-wrap: wrap;
+    }
 }
 
 .counter {

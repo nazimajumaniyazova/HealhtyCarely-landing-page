@@ -7,6 +7,9 @@
 .find-doctor__wrapper {
     display: flex;
     justify-content: space-between;
+    @include media-tablet {
+        flex-direction: column;
+    }
 }
 
 .find-doctor__content {
@@ -28,21 +31,38 @@
     display: flex;
     position: relative;
     z-index: 2;
+    @include media-tablet {
+        justify-content: flex-end;
+    }
 }
 
 .find-doctor__card-profile {
     position: absolute;
-    left: -15%;
-    top: 20%;
+    left: -8%;
+    top: 25%;
     max-width: 144px;
     max-height: 178px;
     border-radius: 10px;
     box-shadow: 0px -24px 34px rgba(199, 201, 217, 0.15);
     border-radius: 10px;
     z-index: 5;
+    @include media-tablet {
+        left: 25%;
+        top: 15%;
+    }
+    @include media-mobile {
+        left: 15%;
+        top: 15%;
+    }
 }
 
-.find-doctor__image {}
+.find-doctor__image {
+    max-width: 516px;
+    @include media-tablet {
+        max-width: 416px;
+        height: auto;
+    }
+}
 
 .find-doctor__circle-elem {
     position: absolute;
@@ -53,6 +73,10 @@
     border-radius: 50%;
     background-color: $color-primary;
     z-index: -1;
+    @include media-tablet {
+        left: 30%;
+        top: 38%;
+    }
 }
 
 .find-doctor__oportinuties {
