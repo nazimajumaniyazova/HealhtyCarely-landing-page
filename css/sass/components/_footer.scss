@@ -37,6 +37,12 @@
         flex-basis: 100%;
         justify-content: space-between;
     }
+    @include media-mobile-small {
+        flex-wrap: wrap;
+        >.footer-menu__column {
+            flex-basis: 30%;
+        }
+    }
 }
 
 .footer-menu__title {
