@@ -1,0 +1,47 @@
+.ico {
+    display: inline-block;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.icon-search {
+    background-image: url("./../img/Search.svg");
+}
+
+.icon-profile {
+    background-image: url("./../img/Profile.svg");
+}
+
+.icon-calendar {
+    background-image: url("./../img/Calendar.svg");
+}
+
+.icon-star {
+    background-image: url("./../img/Star.svg");
+}
+
+.icon-done {
+    width: 24px;
+    height: 24px;
+    background-image: url("./../img/done-icon.svg");
+}
+
+.icon-social {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
+
+.icon-fb {
+    background-image: url("./../img/facebook.svg");
+}
+
+.icon-in {
+    background-image: url("./../img/instagram.svg");
+}
+
+.icon-tw {
+    background-image: url("./../img/twitter.svg");
+}

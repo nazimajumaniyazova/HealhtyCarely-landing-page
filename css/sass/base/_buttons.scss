@@ -1,0 +1,29 @@
+.button {
+    @extend %font-fam;
+    padding: 16px 36px;
+    @include font($size: 1.6rem, $height: 2rem, $weight: 500, $spacing: 0.03em);
+    border-radius: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+    &_colored {
+        background-color: $color-primary;
+        color: $color-light;
+    }
+    &_small {
+        padding: 12px 22px;
+        font-size: 1.4rem;
+    }
+    @include media-mobile {
+        padding: 12px 36px;
+        font-size: 1.4rem;
+        &_small {
+            padding: 10px 22px;
+            font-size: 1.2rem;
+        }
+    }
+    @include media-mobile-small {
+        font-size: 1.2rem;
+    }
+}

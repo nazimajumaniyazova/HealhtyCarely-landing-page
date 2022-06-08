@@ -1,0 +1,111 @@
+.promo {
+    padding-top: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.promo__wrapper {
+    display: flex;
+    justify-content: space-between;
+    @include media-tablet {
+        flex-wrap: wrap;
+    }
+}
+
+.promo__content {
+    flex-basis: 55%;
+    flex-shrink: 0;
+    @include media-tablet {
+        flex-basis: 90%;
+    }
+    @include media-mobile {
+        flex-basis: 90%;
+    }
+    @include media-mobile-small {
+        flex-basis: 100%;
+    }
+}
+
+.promo__title {
+    margin-bottom: 26px;
+}
+
+.promo__text {
+    margin-bottom: 26px;
+    @include media-tablet {
+        max-width: 75%;
+    }
+    @include media-mobile {
+        max-width: 80%;
+    }
+    @include media-mobile-small {
+        max-width: 90%;
+        margin-bottom: 46px;
+    }
+}
+
+.promo__button {}
+
+.promo__img {
+    position: relative;
+    z-index: 2;
+    @include media-tablet {}
+}
+
+.promo__image {
+    margin-left: -10%;
+    margin-bottom: -5px;
+    @include media-tablet {
+        max-width: 700px;
+        margin-top: -25%;
+        margin-left: 25%;
+    }
+    @include media-mobile {
+        max-width: 600px;
+        margin-top: -40%;
+        margin-right: 40%;
+    }
+    @include media-mobile-small {
+        display: none;
+    }
+}
+
+.promo__circle-elem {
+    position: absolute;
+    left: 45%;
+    top: 30%;
+    width: 1240px;
+    height: 1240px;
+    border-radius: 50%;
+    background-color: $color-primary;
+    z-index: -1;
+    @include media-tablet {
+        left: 25%;
+        top: 30%;
+    }
+    @include media-mobile-small {
+        display: none;
+    }
+}
+
+.promo__card-profile {
+    position: absolute;
+    left: -45px;
+    bottom: 83px;
+    max-width: 144px;
+    max-height: 178px;
+    border-radius: 10px;
+    box-shadow: 0px -24px 34px rgba(199, 201, 217, 0.15);
+    border-radius: 10px;
+    z-index: 5;
+    @include media-tablet {
+        left: 20%;
+        top: 35%;
+    }
+    @include media-mobile {
+        max-width: 114px;
+        max-height: 148px;
+        left: 35%;
+        top: 10%;
+    }
+}
