@@ -77,7 +77,7 @@
         margin-bottom: 20px;
         &::after {
             top: 5%;
-            left: 30%;
+            left: 25%;
         }
     }
     @include media-mobile-small {
@@ -85,15 +85,12 @@
             width: 200px;
             height: 165px;
             top: 5%;
-            left: 25%;
+            left: 0%;
         }
     }
     @include media-mobile-mini {
         &::after {
-            width: 200px;
-            height: 165px;
-            top: 5%;
-            left: 10%;
+            display: none;
         }
     }
 }

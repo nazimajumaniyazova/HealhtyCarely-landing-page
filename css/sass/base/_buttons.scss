@@ -6,6 +6,7 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+    white-space: nowrap;
     &_colored {
         background-color: $color-primary;
         color: $color-light;
@@ -21,5 +22,8 @@
             padding: 10px 22px;
             font-size: 1.2rem;
         }
+    }
+    @include media-mobile-small {
+        font-size: 1.2rem;
     }
 }
